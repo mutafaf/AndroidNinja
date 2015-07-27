@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidninja"
+    android:versionCode="3"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            
+            android:name="com.example.androidninja.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.example.androidninja.Game"
+            android:label="@string/title_activity_game"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+             >
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.example.androidninja.Setting"
+            android:label="@string/title_activity_setting"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+           >
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.example.androidninja.ScoreActivity"
+            android:label="@string/high_score"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+             >
+        </activity>
+        
+        <activity 
+            android:screenOrientation="landscape"
+            
+            android:name="com.example.androidninja.GetName"
+            android:label="@string/name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+             >
+            
+        </activity>
+        
+         <activity 
+             android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.example.androidninja.ScorerActivity"
+            android:label="@string/sc"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            >
+            
+        </activity>
+        
+       
+
+        <service android:name="com.example.androidninja.playerService" >
+        </service>
+            "
+        <activity
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.example.androidninja.AboutusActivity"
+            android:label="@string/title_activity_aboutus" 
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        </activity>
+    </application>
+
+</manifest>

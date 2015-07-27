@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imag"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:text="@string/about_us"
+        android:textColor="#ffda5e"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/srool"
+        android:onClick="onClickBack"
+        android:textColor="#ffda5e"
+        android:text="@string/back" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="27dp"
+        android:text="@string/version"
+        android:textColor="#ffda5e"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/game_Help"
+        android:textColor="#ffda5e"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+
